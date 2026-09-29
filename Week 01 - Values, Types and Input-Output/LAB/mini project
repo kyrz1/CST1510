@@ -1,0 +1,48 @@
+"""
+RECORD CHECK  -  my version
+===========================
+
+Name  :
+Lane  :  IT
+Date  :
+
+Run it:   python template.py
+"""
+
+# ==================================================================== INPUT
+# IT lane: hostname, GB used, GB total
+
+hostname = input("Enter hostname: ")
+gb_used = float(input("Enter GB used: "))
+gb_total = float(input("Enter GB total: "))
+
+# ================================================================== PROCESS
+# Calculate values not given
+
+gb_free = gb_total - gb_used
+percent_used = (gb_used / gb_total) * 100
+
+# =================================================================== OUTPUT
+
+print()
+print("=" * 34)
+print(f"  RECORD CHECK  -  {hostname}")
+print("=" * 34)
+
+# Threshold
+print(f"  Used        : {gb_used}")
+print(f"  Total       : {gb_total}")
+
+# Typical (2dp, right-aligned)
+print(f"  Free        : {gb_free:>10.2f}")
+print(f"  Percent     : {percent_used:>10.2f} %")
+
+# Excellent
+print(f"  Signed Free : {gb_free:>+10.2f}")
+
+# Extra useful IT line:
+# Shows how much storage is still available as a percentage.
+storage_remaining = (gb_free / gb_total) * 100
+print(f"  Remaining   : {storage_remaining:>10.2f} %")   # useful for capacity planning
+
+print("=" * 34)
