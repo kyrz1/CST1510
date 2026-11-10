@@ -1,0 +1,11 @@
+hostname,region,used,total,percent,status,used_plus_10,status_lambda,region_upper
+srv-01,east,87,100,87.0,OK,97,OK,EAST
+srv-02,east,45,100,45.0,OK,55,OK,EAST
+srv-03,west,120,100,120.0,OVER LIMIT,130,OVER LIMIT,WEST
+srv-04,west,60,100,60.0,OK,70,OK,WEST
+srv-05,north,101,100,101.0,OVER LIMIT,111,OVER LIMIT,NORTH
+srv-06,east,92,100,92.0,WARNING,102,WARNING,EAST
+srv-07,west,30,100,30.0,OK,40,OK,WEST
+srv-08,north,75,100,75.0,OK,85,OK,NORTH
+srv-09,east,95,100,95.0,WARNING,105,WARNING,EAST
+srv-10,north,50,100,50.0,OK,60,OK,NORTH
